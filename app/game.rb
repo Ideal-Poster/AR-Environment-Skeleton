@@ -4,11 +4,11 @@ class Game
         system "clear"
         introduction
         welcome
-        rules
-        quick_demo
+        # rules
+        # quick_demo
     end
 
-    def introduction
+    def introduction 
         puts "J.A.R.V.I.S. initializing"
         sleep(5)
         puts " "
