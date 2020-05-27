@@ -10,101 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 6) do
+ActiveRecord::Schema.define(version: 7) do
 
   create_table "abilities", force: :cascade do |t|
     t.string "name"
     t.integer "type_id"
   end
 
-  create_table "ablities_villains", force: :cascade do |t|
+  create_table "abilities_suits", force: :cascade do |t|
     t.integer "ability_id"
-    t.integer "villain_id"
-  end
-
-  create_table "suits", force: :cascade do |t|
-    t.string "name"
-  end
-
-  create_table "types", force: :cascade do |t|
-    t.string "name"
-    t.string "strength"
-    t.string "weakness"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-  end
-
-  create_table "villains", force: :cascade do |t|
-    t.string "name"
-  end
-
-end
-
-  create_table "abilities", force: :cascade do |t|
-    t.string "name"
-    t.integer "type_id"
-  end
-
-  create_table "ablities_villains", force: :cascade do |t|
-    t.integer "ability_id"
-    t.integer "villain_id"
-  end
-
-  create_table "suits", force: :cascade do |t|
-    t.string "name"
-  end
-
-  create_table "types", force: :cascade do |t|
-    t.string "name"
-    t.string "strength"
-    t.string "weakness"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-  end
-
-  create_table "villains", force: :cascade do |t|
-    t.string "name"
-  end
-
-end
-
-  create_table "abilities", force: :cascade do |t|
-    t.string "name"
-    t.integer "type_id"
-  end
-
-  create_table "ablities_villains", force: :cascade do |t|
-    t.integer "ability_id"
-    t.integer "villain_id"
-  end
-
-  create_table "suits", force: :cascade do |t|
-    t.string "name"
-  end
-
-  create_table "types", force: :cascade do |t|
-    t.string "name"
-    t.string "strength"
-    t.string "weakness"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-  end
-
-  create_table "villains", force: :cascade do |t|
-    t.string "name"
-  end
-
-end
-
-  create_table "abilities", force: :cascade do |t|
-    t.string "name"
-    t.integer "type_id"
+    t.integer "suit_id"
   end
 
   create_table "ablities_villains", force: :cascade do |t|

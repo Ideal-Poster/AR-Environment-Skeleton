@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
+gem "sinatra-activerecord"
 gem 'activerecord'
-gem 'sinatra-activerecord'
-gem 'rake'
-gem 'require_all'
-gem 'sqlite3'
-gem 'pry'
+gem "sqlite3"
+gem "pry"
+gem "require_all"
+gem "faker"
+gem "tty-prompt" 

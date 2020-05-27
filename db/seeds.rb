@@ -1,0 +1,17 @@
+adam = User.create(name: "Adam")
+belle = User.create(name: "Belle")
+chris = User.create(name: "Chris")
+
+suit1 = Suit.create(name: "Suit1")
+suit2 = Suit.create(name: "Suit2")
+suit3 = Suit.create(name: "Suit3")
+suit4 = Suit.create(name: "Suit4")
+suit5 = Suit.create(name: "Suit5")
+suit6 = Suit.create(name: "Suit6")
+
+build1 = Build.create(name: "Build1", user_id: adam.id, suit_id: suit1.id)
+build2 = Build.create(name: "Build2", user_id: adam.id, suit_id: suit2.id)
+build3 = Build.create(name: "Build3", user_id: adam.id, suit_id: suit3.id)
+build4 = Build.create(name: "Build4", user_id: belle.id, suit_id: suit4.id)
+build5 = Build.create(name: "Build5", user_id: belle.id, suit_id: suit5.id)
+build6 = Build.create(name: "Build6", user_id: belle.id, suit_id: suit6.id)
