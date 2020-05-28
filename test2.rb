@@ -26,7 +26,7 @@ class User
     #     x.count  
     # end 
 end
-# 
+
 class Session
     @@all = [] 
     attr_accessor :name, :status, :user, :suit  
