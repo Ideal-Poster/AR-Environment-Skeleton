@@ -1,4 +1,4 @@
 class Villain < ActiveRecord::Base
-    has_many :abilities_villains
-    has_many :abilities, through: :abilities_villains  
+    has_one :user 
+    has_one :ability
 end

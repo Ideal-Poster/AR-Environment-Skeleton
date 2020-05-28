@@ -1,5 +1,5 @@
 class Ability < ActiveRecord::Base
-    has_many :abilities_suits  
-    has_many :suits, through: :abilities_suits 
-    belongs_to :type
-end
+    has_one :suit 
+    has_one :villain
+    has_one :type 
+end 

@@ -6,6 +6,10 @@ AbilitySuit.destroy_all
 Ability.destroy_all
 Type.destroy_all
 
+# # # 
+
+
+
 # User instances (3):
 
 adam = User.create(name: "Adam")
